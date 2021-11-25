@@ -54,12 +54,12 @@ export const Container = styled.main`
 
             strong{
                 font-size: 1.5rem;
-                color: ver(--text);
+                color: var(--text);
             }
 
             span{
                 font-size: 0.8rem;
-                
+                color: var(--text-secondary);
             }
         }
     }
