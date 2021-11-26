@@ -1,6 +1,6 @@
 import {Container} from './styles'
 
-export function User({user, userRepos}){
+export function User({user, userRepos, setIsReposListActive}){
     console.log(user)
     return(
         <Container>
@@ -9,10 +9,10 @@ export function User({user, userRepos}){
         <h2>{user.login}</h2>
         <p>{user.bio}</p>
         <section>
-            <div>
+            <button type='button' onClick={() => setIsReposListActive(true)}>
                 <strong>{userRepos?.length}</strong>
                 <span>Repositórios</span>
-            </div>
+            </button>
             <div>
                 <strong>{user.followers}</strong>
                 <span>Seguidores</span>
