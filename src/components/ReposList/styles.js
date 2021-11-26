@@ -11,8 +11,11 @@ div{
     align-items: center;
     gap: 3rem;
     padding: 1rem;
+    //position: relative;
 
     button{
+        //position: absolute;
+        //left: 1rem;
         display: flex;
         align-items: center;
         color: var(--text-secondary);
